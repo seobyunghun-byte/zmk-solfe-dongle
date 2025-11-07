@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyeslash_sofle}
 layers:
-  LAYER0:
+  layer0:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -325,3 +325,16 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [39, 26]
+  k: $$mdi:apple-keyboard-caps$$
+  l: [layer0]
+- p: [49, 50]
+  k: {t: /, s: '?'}
+  l: [layer0]
+- p: [36, 37]
+  k: {t: '''', s: '"'}
+  l: [layer0]
+- p: [23, 24]
+  k: {t: \, s: '|'}
+  l: [layer0]
