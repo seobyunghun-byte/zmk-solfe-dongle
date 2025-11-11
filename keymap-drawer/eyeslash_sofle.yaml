@@ -340,3 +340,4 @@ combos:
   l: [layer0]
 - p: [12, 11]
   k: {t: '=', s: +}
+  l: [layer0]
