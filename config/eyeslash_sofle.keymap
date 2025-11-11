@@ -169,6 +169,7 @@
         equal_combo {
             bindings = <&kp EQUAL>;
             key-positions = <12 11>;
+            layers = <0>;
         };
     };
 
