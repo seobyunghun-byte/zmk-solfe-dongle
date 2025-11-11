@@ -58,6 +58,13 @@
         bindings = <&mt RIGHT_BRACE RIGHT_PARENTHESIS>, <&kp RIGHT_BRACKET>;
     };
 
+    nb_td_plus: nb_td_plus {
+        compatible = "zmk,behavior-tap-dance";
+        label = "NB_TD_PLUS";
+        #binding-cells = <0>;
+        bindings = <&mt ASTERISK PLUS>, <&kp MINUS>;
+    };
+
     macros {
         mcr_01: new_macro_01 {
             compatible = "zmk,behavior-macro";
@@ -183,11 +190,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1     &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6     &kp F7    &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp PG_UP  &kp END   &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &trans     &trans  &trans  &trans  &mo 2     &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans     &trans  &trans  &trans  &trans    &mkp LCLK        &trans     &trans    &trans      &trans     &trans
+&kp GRAVE   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6       &kp F7      &kp F8      &kp F9      &kp F10   &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp K_MENU   &kp UP      &trans      &kp INS     &kp HOME  &mt LEFT_SHIFT PG_UP
+&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp LEFT     &kp DOWN    &kp RIGHT   &kp DELETE  &kp END   &mt RIGHT_SHIFT PAGE_DOWN
+&trans      &trans  &trans  &trans  &trans  &mo 2     &mmv MOVE_RIGHT  &nb_td_plus  &nb_td_pts  &nb_td_pte  &kp F11     &kp F12   &trans
+&kp C_MUTE  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans       &trans      &trans      &trans      &trans
             >;
 
             display-name = "layer1";
