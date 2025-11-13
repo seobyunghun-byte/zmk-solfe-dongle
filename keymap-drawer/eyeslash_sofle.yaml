@@ -255,8 +255,8 @@ layers:
   - {type: held}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
-  - {type: held alternate}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -276,7 +276,3 @@ combos:
 - p: [24, 23]
   k: {t: '=', s: +}
   l: [layer0]
-- p: [57, 56]
-  k: '3'
-- p: [60, 59]
-  k: '3'
