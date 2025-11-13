@@ -172,16 +172,6 @@
             key-positions = <24 23>;
             layers = <0>;
         };
-
-        layer3_1_combo {
-            bindings = <&mo 3>;
-            key-positions = <57 56>;
-        };
-
-        layer3_2_combo {
-            bindings = <&mo 3>;
-            key-positions = <60 59>;
-        };
     };
 
     keymap {
@@ -233,6 +223,15 @@
 &trans        &trans        &trans        &trans        &trans          &bootloader    &trans  &bootloader  &trans     &trans  &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans          &trans         &trans  &trans       &trans     &trans  &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        test1 {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
