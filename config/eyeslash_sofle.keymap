@@ -163,13 +163,13 @@
 
         minas_combo {
             bindings = <&kp MINUS>;
-            key-positions = <23 24>;
+            key-positions = <23 22>;
             layers = <0>;
         };
 
         equal_combo {
             bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+            key-positions = <24 23>;
             layers = <0>;
         };
     };
@@ -205,7 +205,7 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &trans             &trans  &trans  &trans       &sys_reset    &mmv MOVE_UP     &trans    &trans    &trans    &trans    &trans    &mcr_e01
+&kp TILDE  &trans             &trans  &trans  &trans       &sys_reset    &mmv MOVE_UP     &trans    &trans    &trans    &trans    &trans    &trans
 &trans     &trans             &trans  &trans  &trans       &trans        &mmv MOVE_DOWN   &trans    &trans    &trans    &trans    &trans    &trans
 &trans     &kp LC(MINUS)      &trans  &trans  &trans       &trans        &mmv MOVE_LEFT   &mcr_01   &mcr_02   &mcr_03   &trans    &trans    &trans
 &trans     &kp LC(LS(MINUS))  &trans  &trans  &trans       &trans        &mmv MOVE_RIGHT  &mcr_m01  &mcr_m02  &mcr_m03  &mcr_m04  &mcr_m05  &trans
@@ -227,11 +227,11 @@
 
         layer_4 {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans  &sys_reset  &soft_off    &trans  &trans  &trans  &bt BT_CLR_ALL
-&out OUT_USB  &out OUT_BLE  &trans        &trans        &trans        &trans    &trans  &trans      &trans       &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans      &trans       &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans      &trans       &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans      &bootloader  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans  &sys_reset  &soft_off    &trans  &trans  &trans  &bt BT_CLR_ALL
+&out OUT_USB  &out OUT_BLE  &trans        &trans        &trans        &trans      &trans  &trans      &trans       &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans      &trans       &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans      &trans       &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &mcr_e01    &trans  &trans      &bootloader  &trans  &trans  &trans
             >;
         };
     };
