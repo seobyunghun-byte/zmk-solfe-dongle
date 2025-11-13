@@ -172,6 +172,16 @@
             key-positions = <24 23>;
             layers = <0>;
         };
+
+        layer3_1_combo {
+            bindings = <&mo 3>;
+            key-positions = <57 56>;
+        };
+
+        layer3_2_combo {
+            bindings = <&mo 3>;
+            key-positions = <60 59>;
+        };
     };
 
     keymap {
@@ -183,7 +193,7 @@
 &mt RIGHT_SHIFT TAB  &kp Q         &kp W             &kp E     &kp R        &kp T          &kp DOWN_ARROW   &kp Y        &kp U        &kp I     &kp O             &kp P          &kp BSLH
 &mt LEFT_SHIFT TAB   &kp A         &kp S             &kp D     &kp F        &kp G          &kp LEFT_ARROW   &kp H        &kp J        &kp K     &kp L             &kp SEMI       &mt RIGHT_SHIFT ENTER
 &kp LEFT_CONTROL     &kp Z         &kp X             &kp C     &kp V        &kp B          &kp RIGHT_ARROW  &kp B        &kp N        &kp M     &kp COMMA         &kp DOT        &mt LEFT_SHIFT ENTER
-&kp C_MUTE           &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LCMD  &lt 1 SPACE  &lt 2 SPACE    &kp ENTER        &lt 4 ENTER  &lt 3 ENTER  &kp LCMD  &kp LEFT_CONTROL  &kp RIGHT_ALT
+&kp C_MUTE           &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LCMD  &lt 1 SPACE  &lt 2 SPACE    &kp ENTER        &lt 2 ENTER  &lt 1 ENTER  &kp LCMD  &kp LEFT_CONTROL  &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -205,11 +215,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &trans             &trans  &trans  &trans       &sys_reset    &mmv MOVE_UP     &trans    &trans    &trans    &trans    &trans    &trans
-&trans     &trans             &trans  &trans  &trans       &trans        &mmv MOVE_DOWN   &trans    &trans    &trans    &trans    &trans    &trans
-&trans     &kp LC(MINUS)      &trans  &trans  &trans       &trans        &mmv MOVE_LEFT   &mcr_01   &mcr_02   &mcr_03   &trans    &trans    &trans
-&trans     &kp LC(LS(MINUS))  &trans  &trans  &trans       &trans        &mmv MOVE_RIGHT  &mcr_m01  &mcr_m02  &mcr_m03  &mcr_m04  &mcr_m05  &trans
-&trans     &trans             &trans  &trans  &bootloader  &trans        &mkp LCLK        &trans    &trans    &trans    &trans    &trans
+&kp TILDE  &trans             &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans    &trans    &trans    &trans    &trans    &trans
+&trans     &trans             &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &trans    &trans    &trans    &trans    &trans    &trans
+&trans     &kp LC(MINUS)      &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &mcr_01   &mcr_02   &mcr_03   &trans    &trans    &trans
+&trans     &kp LC(LS(MINUS))  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &mcr_m01  &mcr_m02  &mcr_m03  &mcr_m04  &mcr_m05  &trans
+&trans     &trans             &trans  &trans  &trans  &trans    &mkp LCLK        &trans    &trans    &trans    &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -217,21 +227,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans  &sys_reset  &soft_off    &trans  &trans  &trans  &bt BT_CLR_ALL
-&out OUT_USB  &out OUT_BLE  &trans        &trans        &trans        &trans      &trans  &trans      &trans       &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans      &trans       &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans      &trans       &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &mcr_e01    &trans  &trans      &bootloader  &trans  &trans  &trans
+&out OUT_BLE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR_ALL  &sys_reset     &trans  &sys_reset   &soft_off  &trans  &trans  &trans  &mcr_e01
+&out OUT_USB  &trans        &trans        &trans        &trans          &trans         &trans  &trans       &trans     &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans          &trans         &trans  &trans       &trans     &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans          &bootloader    &trans  &bootloader  &trans     &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans          &trans         &trans  &trans       &trans     &trans  &trans  &trans
             >;
         };
     };
