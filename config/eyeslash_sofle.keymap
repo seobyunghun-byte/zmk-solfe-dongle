@@ -162,7 +162,7 @@
         };
 
         minas_combo {
-            bindings = <&kp MINUS>;
+            bindings = <&kp LS(MINUS)>;
             key-positions = <23 22>;
             layers = <0>;
         };
