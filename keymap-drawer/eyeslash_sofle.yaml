@@ -59,7 +59,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-space$$', h: layer1}
   - {t: '$$mdi:keyboard-space$$', h: '2'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', h: '2'}
   - {t: '$$mdi:keyboard-return$$', h: layer1}
   - $$mdi:apple-keyboard-command$$
@@ -275,4 +275,7 @@ combos:
   l: [layer0]
 - p: [24, 23]
   k: {t: '=', s: +}
+  l: [layer0]
+- p: [38, 51]
+  k: $$mdi:apple-keyboard-option$$
   l: [layer0]
