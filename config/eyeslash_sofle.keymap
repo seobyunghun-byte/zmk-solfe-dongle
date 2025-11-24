@@ -89,13 +89,7 @@
         mcr_m01: mcr_m01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&mcr_m01_select &kp RET>,
-                <&macro_wait_time 100>,
-                <&mcr_m01_from &mcr_m03 &kp RET>,
-                <&macro_wait_time 100>,
-                <&mcr_m01_where>;
-
+            bindings = <&mcr_m01_select &mcr_m01_from &mcr_m03 &mcr_m01_where>;
             label = "MCR_M01";
         };
 
@@ -157,7 +151,7 @@
         mcr_m01_select: mcr_m01_select {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp E &kp L &kp E &kp C &kp T &kp SPACE &kp STAR &kp SPACE>;
+            bindings = <&kp S &kp E &kp L &kp E &kp C &kp T &kp SPACE &kp STAR &kp RET>;
             label = "MCR_M01_SELECT";
         };
 
@@ -171,7 +165,7 @@
         mcr_m01_where: mcr_m01_where {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE &kp W &kp H &kp E &kp R &kp E &kp SPACE>;
+            bindings = <&kp RET &kp BACKSPACE &kp W &kp H &kp E &kp R &kp E &kp SPACE>;
             label = "MCR_M01_WHERE";
         };
     };
