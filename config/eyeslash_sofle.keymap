@@ -126,7 +126,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp RG(LA(LC(LS(C))))>,
-                <&macro_tap_time 500>,
+                <&macro_wait_time 500>,
                 <&mcr_e01_2>;
 
             label = "MCR_E01";
