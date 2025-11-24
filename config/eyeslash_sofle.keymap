@@ -128,7 +128,7 @@
                 <&kp LG(R)>,
                 <&macro_wait_time 500>,
                 <&mcr_e01_1>,
-                <&macro_wait_time 2500>,
+                <&macro_wait_time 5000>,
                 <&mcr_e01_2>;
 
             label = "MCR_E01";
