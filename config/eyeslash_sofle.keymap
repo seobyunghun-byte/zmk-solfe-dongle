@@ -134,13 +134,6 @@
             tap-ms = <5>;
         };
 
-        mcr_e01_1: mcr_e01_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp M &kp D &kp RET>;
-            label = "MCR_E01_1";
-        };
-
         mcr_e01_2: mcr_e01_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -196,13 +189,13 @@
 
         minas_combo {
             bindings = <&kp LS(MINUS)>;
-            key-positions = <23 22>;
+            key-positions = <22 21>;
             layers = <0>;
         };
 
         equal_combo {
             bindings = <&kp EQUAL>;
-            key-positions = <24 23>;
+            key-positions = <23 22>;
             layers = <0>;
         };
 
@@ -231,11 +224,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6         &kp F7      &kp F8      &kp F9      &kp F10   &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &nb_td_plus    &nb_td_pts  &nb_td_pte  &trans      &kp F11   &kp F12
-&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp LC(K_APP)  &kp UP      &trans      &kp INS     &kp HOME  &mt LEFT_SHIFT PAGE_UP
-&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp LEFT       &kp DOWN    &kp RIGHT   &kp DELETE  &kp END   &mt RIGHT_SHIFT PAGE_DOWN
-&kp C_MUTE  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans         &trans      &trans      &trans      &trans
+&kp GRAVE   &kp F1  &kp F2     &kp F3     &kp F4     &kp F5    &mmv MOVE_UP     &kp F6         &kp F7    &kp F8       &kp F9      &kp F10   &trans
+&trans      &trans  &trans     &trans     &trans     &trans    &mmv MOVE_DOWN   &trans         &trans    &trans       &trans      &kp F11   &kp F12
+&trans      &trans  &trans     &trans     &trans     &trans    &mmv MOVE_LEFT   &kp LC(K_APP)  &kp UP    &nb_td_plus  &kp INS     &kp HOME  &mt LEFT_SHIFT PAGE_UP
+&trans      &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &mmv MOVE_RIGHT  &kp LEFT       &kp DOWN  &kp RIGHT    &kp DELETE  &kp END   &mt RIGHT_SHIFT PAGE_DOWN
+&kp C_MUTE  &trans  &trans     &trans     &trans     &trans    &mkp LCLK        &trans         &trans    &nb_td_pts   &nb_td_pte  &trans
             >;
 
             display-name = "layer1";
