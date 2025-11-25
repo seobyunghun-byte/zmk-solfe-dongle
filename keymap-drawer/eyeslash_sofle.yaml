@@ -86,9 +86,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - '&nb_td_plus'
-  - '&nb_td_pts'
-  - '&nb_td_pte'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F12
@@ -101,15 +101,15 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - Ctl+APP
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&nb_td_plus'
   - INS
   - HOME
   - {t: PgUp, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
@@ -127,8 +127,8 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&nb_td_pts'
+  - '&nb_td_pte'
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
   - {t: '$$mdi:transfer$$', type: trans}
@@ -270,10 +270,10 @@ combos:
 - p: [36, 37]
   k: {t: '''', s: '"'}
   l: [layer0]
-- p: [23, 22]
+- p: [22, 21]
   k: Sft+-
   l: [layer0]
-- p: [24, 23]
+- p: [23, 22]
   k: {t: '=', s: +}
   l: [layer0]
 - p: [38, 51]
